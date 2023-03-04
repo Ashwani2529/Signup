@@ -118,14 +118,38 @@ top: -5px;
 .register p a:hover{
     text-decoration: underline;
 }
-.form-box::before{
+.hey{
+    position:fixed;
+    z-index: -1;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hey::before{
     
     position:absolute;
     width: 350%;
     height: 350%;
     content:'';
-    background-image: conic-gradient(transparent, transparent, transparent, #bdae915a);
-    animation: rotate_border 14s cubic-bezier(0.56, 0.01, 0.07, 0.8) infinite;
+    background-image: conic-gradient(transparent, transparent, transparent, #baa06d5a);
+    animation: rotate_border 7s cubic-bezier(0.56, 0.03, 0.08, 0.8) infinite;
+
+}
+.hey::after{
+    
+    position:absolute;
+    width: 350%;
+    height: 350%;
+    content:'';
+    background-image: conic-gradient(transparent, transparent, transparent, #83837d5a);
+    animation: rotate_border 14s cubic-bezier(0.66, 0.02, 0.07, 0.9) infinite;
 
 }
 @keyframes rotate_border{
